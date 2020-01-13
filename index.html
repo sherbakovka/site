@@ -1,0 +1,123 @@
+<html>
+<head>
+<script> 
+//Функция проверки формы на наличие пустых полей
+function validateForm() 
+{
+var validateFlag = true; //Возращаемая функцией логическая переменная
+for (var i=0; i<3; i++) //Проверяем первые 3 поля формы
+{
+var countElem = document.anketa.elements[i];
+if (countElem.value == '') //Текущий элемент пустой?
+{ //Если да, то
+var validateFlag = false; //Устанавливаем флаг в false
+alert('Заполните всю анкету');
+break; //Цикл можно не продолжать
+}
+}
+if (validateFlag) //Если вся анкета заполнена
+alert('Спасибо за заполнение анкеты')
+return validateFlag;
+}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section> 
+
+<header style="background-image:url(222.jpg)">
+<div id="page-one">
+<h1>Сервисный центр "Руки из плеч"</h1>
+</header>
+
+<menu>
+<ul>
+<li><a href="#page-one">главная</a></li>
+<li><a href="#page-two">о компании</a></li>
+<li><a href="#page-three">новости</a></li>
+<li><a href="#page-four">услуги</a></li>
+<li><a href="#page-four">контакты</a></li>
+</ul>
+</menu>
+
+<center>
+<page>
+<div id="page-two">
+<h2>O компании</h2>
+<p>
+Сервисный центр <b>"Руки из плеч"</b> - крупнейший сервисный центр на территории Ярославля и Ярославской области, это более 100 специалистов, обладающих профессиональными навыками и опытом ремонта сложной компьютерной и бытовой техники, это многолетний опыт работы компании.<p>
+
+Мы занимаемся гарантийным и постгарантийным обслуживанием оборудования, а также осуществляем установку, доставку, выездной ремонт любой техники по желанию заказчика. Современная техническая база сервисного центра отвечает высоким требованиям производителей и позволяет нам осуществлять ремонт любого уровня сложности. Инженеры сервисного центра имеют многолетний опыт работы и высокую квалификацию, для поддержания уровня и качества обслуживания регулярно проходят online-тренинги, курсы повышения квалификации.</p>
+</p>
+</page>
+<div id="page-three">
+<news>
+
+<div>
+<foto style="background-image:url(4.jpg)"></foto>
+<h3>Ноутбуки LG Gram  получили процессоры Intel Core восьмого поколения</h3>
+<p>Компания LG обновила семейство портативных компьютеров Gram, переведя их на аппаратную платформу Intel Kaby Lake Refresh с процессорами Core восьмого поколения.
+</p>
+<a href="https:/3dnews.ru/962291" target ="blank">подробнее</a>
+</div>
+<div>
+<foto style="background-image:url(10.jpg)"></foto>
+<h3>Выход Coffee Lake не помог процессорам Intel обойти по популярности AMD</h3>
+<p>Факт остаётся фактом – процессоры AMD опережают процессоры Intel по популярности в конкретном немецком магазине.
+</p>
+<a href="https://www.overclockers.ru/hardnews/88234/vyhod-coffee-lake-ne-pomog-processoram-intel-obojti-po-populyarnosti-processory-amd.html" target ="blank">подробнее</a>
+</div>
+<div>
+<foto style="background-image:url(2.jpg)"></foto>
+<h3>Core i7-8700K позволил GeForse GTX 980 Ti обновить абсолютный рекорд 3DMark05</h3>
+<p>Центральный процессор Core i7-8700K был разогнан до 7145 МГц под жидким азотом</p>
+
+</p>
+<a href="https://www.overclockers.ru/hardnews/88236/core-i7-8700k-pozvolil-geforse-gtx-980-ti-obnovit-absoljutnyj-rekord-3dmark05.html" target ="blank">подробнее</a>
+</div>
+<span style="clear:both; display:block;"></span>
+</news>
+</center>
+<div id="page-four">
+
+<footer>
+
+<div>
+<h6>Контакты</h6>
+<h3><p>Наш адрес: г. Ярославль, улица Республиканская, 3, стр. 5.</p>
+<p>Мы работаем без обеда: 
+понедельник-пятница 09:00-19:00</p>
+<p>суббота 10:00-17:00</p>
+<p>воскресенье выходной</p></h3>
+<h3><p>Тел:88005553535</p></h3>
+
+</div>
+
+<div>
+<h6>Услуги</h6>
+
+<h3><p>Для того, чтобы оставить заявку, заполните анкету. Наш оператор непременно свяжется с Вами в ближайщее время</p></h3>
+</div>
+
+<div>
+<h6>Анкета</h6>
+<form action="" name="anketa" method="post" onSubmit="validateForm();">
+
+<input type="text" name="name" value="" placeholder="Имя">
+
+<input type="text" name="tel" value=""placeholder="Фамилия">
+
+<input type="text" name="mail" value=""placeholder="Телефон">
+<textarea name="comment"></textarea>
+<button id ="chec"> отправить </button>
+</form>
+</div>
+
+
+</footer>
+<p align=center>Разработано студентом группы ЭИС-24 Щербаковой Еленой</p>
+<p align=center>2019</p>
+</section>
+
+</body>
+</html>

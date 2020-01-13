@@ -1,0 +1,119 @@
+body {margin: 0;}
+p,h1,h2.h3,h4,h5,h6 {margin: 0;}
+
+
+
+section {width:1000px;margin: 0 auto;}
+
+header {
+position:relative;
+width:100%;
+height:600px;
+background:#ddd;
+background-size: cover;
+background-repit:no-repit;
+background-position: center;
+background-attachment: fixed;
+margin:0;
+
+}
+
+header h1 {
+position:absolute;
+display:block;
+text-align:center;
+widht:183px;
+font-size:32px;
+font-weight:bold;
+text-transform:uppercase;
+height:27px;
+color:#555;
+top:0; bottom:0;left:0;right:0; margin:auto 0;
+padding:10px 0 15px;
+background: rgba(255,255,255,0.5);
+border-left:5px solid#555;
+border-right:5px solid#555;
+}
+
+menu {
+position:relative;
+display:block;
+width:96%;
+
+background:#555;
+margin-bottom: 50px;
+}
+menu ul{overflow:hidden; widht:670px;margin:0 auto;}
+menu ul li{float:left;}
+menu ul li a{
+display:block;
+color:#fff;
+padding:20px 30px 25px;
+font-size:20px;
+text-decoration:none;
+}
+
+senter {width:100%; height:auto; background:#fff;}
+
+page {
+display: block;
+width:calc(100%-200px);
+text-align:left;
+height:auto;
+padding:0 30px;
+margin-bottom:50px
+}
+
+page h2{
+font-size:26px;
+margin-bottom:20px;
+color:#555;
+}
+
+page p {
+color:#555;
+font-size:22px;
+}
+
+news {position:relative; display: block; width:100%; }
+news div {position:relative; width:31%; margin:10px; text-align:left; height:500px;borger:1px solid#ddd; float:left;}
+news div foto {display: block; wight:100%;color:#555; height: 200px; background-size: cover; }
+news div h3 { margin:10px; font-size:22px; font-weight: bold;}
+news div {text-align:left; }
+news div p { margin:10pxp:}
+news div a {position:absolute; right: 10px; bottom:10px; display: block; widht:95px; padding:10px; background:#f00; color:#fff; text-align:centert;}
+
+footer {
+display: block;
+overflow:hidden;
+height:300px;
+background:#555;
+color:#555;
+padding:40px;
+margin: 50px 0 0 0;
+}
+
+footer div{
+position:relative;
+display: block;
+width:33.33%;
+height:100%;
+float:left;
+color:#fff
+}
+
+footer div h6{
+font-size:22px;
+margin-bottom:15px;
+}
+
+footer div ul {padding:20px; }
+footer div ul li {}
+footer div ul li a {color:#fff;}
+
+footer div form {display: block; width:100%;}
+footer div form input {display: block; width:100%; margin-bottom:10px; padding:10px; border:none;}
+
+footer div form button {width:50%; height:15%;}
+
+footer div form textarea {display: block; width:100%; margin-bottom:10px;padding:10px; border: none;}
